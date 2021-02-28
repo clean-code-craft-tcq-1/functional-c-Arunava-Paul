@@ -16,7 +16,7 @@
 #define MAX_SOC_VALUE 80.0f
 
 #define MAX_CHARGE_RATE 0.8f
-#define MIN_CHARGE_RATE 0.2f
+#define MIN_CHARGE_RATE 0.2f 
 
 
 
