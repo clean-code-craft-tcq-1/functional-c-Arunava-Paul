@@ -18,9 +18,9 @@ void Fc_Cyclic_task(void)
 		{
 			Fc_start_timer();
 			//call the function
-			if(CyclicTask_funcptr[idx_f]!=NULL_PTR)
+			if(Cyc_aptr[idx_f] != NULL_PTR)
 			{
-				(*CyclicTask_funcptr[idx_f])();
+				(*Cyc_aptr[idx_f])();
 			}
 			idx_f++;
 			if(idx_f == MAX_FG_TASK)
@@ -30,12 +30,11 @@ void Fc_Cyclic_task(void)
 		}/*end of if(counter_elapsed() == TRUE)*/
 		else
 		{
-			if(BckTask_funcptr[idx_b]!=NULL_PTR)
+			if(Bg_aptr[idx_b]!=NULL_PTR)
 			{
-				(*BckTask_funcptr[idx_b])();
+				//call the function
+				(*Bg_aptr[idx_b])();
 			}
-			//call background functions
-		    (*BckTask_funcptr[idx_b])();
 			idx_b++;
 			if(idx_b == MAX_BG_TASK)
 			{
