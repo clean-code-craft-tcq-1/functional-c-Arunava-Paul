@@ -36,6 +36,6 @@ extern void Fc_Temperature_Sensor_check(void);
 extern void Fc_SOC_Sensor_check(void);
 extern void Fc_Charge_Rate_Sensor_check(void);
 extern void Fc_System_init(void);
-extern Void Fc_Battery_Check(void);
+extern void Fc_Battery_Check(void);
 
 #endif /* BMS_SYSTEM_CHECK_H_ */
