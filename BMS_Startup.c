@@ -1,4 +1,6 @@
 #include "BMS_Common_Include.h"
+#include "BMS_System_Check.h"
+#include "BMS_Scheduler.h"
 
 int main()
 {
@@ -7,4 +9,5 @@ int main()
   Fc_System_init();
   /********/
   Fc_Cyclic_task();
-}
+  return 0;
+}/*end of main*/
