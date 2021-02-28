@@ -13,6 +13,7 @@
 #include <assert.h>
 
 
+
 #ifndef TRUE
 #define TRUE 1
 #endif
@@ -20,8 +21,6 @@
 #ifndef FALSE
 #define FALSE 0
 #endif
-
-
 
 
 #endif /* BMS_COMMON_INCLUDE_H_ */
