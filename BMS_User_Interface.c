@@ -15,29 +15,32 @@ void Fc_Display_Msg(void)
 {
 	switch(Fault_type_global)
 	{
+	case Fault_none:
+		printf("\n System Ok \n");
+		break;
 	case Fault_low_temp:
-		printf("Warning!! System temperature low");
+		printf("\n Warning!! System temperature low \n");
 		break;
 	case Fault_high_temp:
-		printf("Warning!! System temperature high, Putting system into standby");
+		printf("\n Warning!! System temperature high, Putting system into standby \n");
 		break;
 	case Fault_soc_low:
-		printf("Warning!! System SOC low ,  Putting system into sleep , Please connect the vehicle to charge");
+		printf("\n Warning!! System SOC low ,  Putting system into sleep , Please connect the vehicle to charge \n");
 		break;
 	case Fault_soc_high:
-		printf("Warning!! System SOC is high, disconnecting from charger");
+		printf("\n Warning!! System SOC is high, disconnecting from charger \n");
 		break;
 	case Fault_chargeRate_low:
-		printf("Warning!! System charge rate is low");
+		printf("\n Warning!! System charge rate is low \n");
 		break;
 	case Fault_chargeRate_high:
-		printf("Warning!! System charge rate is high , disconnecting from charger");
+		printf("\n Warning!! System charge rate is high , disconnecting from charger \n");
 		break;
 	case Fault_sensor_failure:
-		printf("Warning!! Sensor failure, Shutting down system");
+		printf("\n Warning!! Sensor failure, Shutting down system \n");
 		break;
 	default:
-		printf("Error!! Abnormal system condition. Putting system into sleep");
+		printf("\n Error!! Abnormal system condition. Putting system into sleep \n");
 		break;
 	}
 	Data_transmission_global = TRUE;
