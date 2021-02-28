@@ -6,6 +6,7 @@
  */
 #include "BMS_Common_Include.h"
 #include "BMS_Hazard_Control.h"
+#include "BMS_System_Check.h"
 
 extern Sysfault_type_en Sysfault_global;
 extern int Data_transmission_global;
