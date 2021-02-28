@@ -19,7 +19,7 @@ void Fc_System_init(void)
 }/*end of Fc_System_init*/
 
 
-Void Fc_Battery_Check(void)
+void Fc_Battery_Check(void)
 {
 	if(!((Fault_type_global == Fault_none)||(Fault_type_global == Fault_chargeRate_low)))
 	{
