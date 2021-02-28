@@ -7,6 +7,7 @@
 #include "BMS_Common_Include.h"
 #include "BMS_System_Check.h"
 #include "BMS_Sensor_Core.h"
+#include "BMS_System_Threshold_Values_Cfg.h"
 
 extern Sysfault_type_en Sysfault_global;
 extern Fault_type_en Fault_type_global;
