@@ -11,7 +11,7 @@
 int Sys_Temp_sr(float *temp)
 {
 	/*Core sensor read is presnt*/
-	*temp = 80.0;
+	*temp = 90.0;
 	/****************************/
 	return 0;
 }/*end of Sys_Temp_sr*/
@@ -31,4 +31,3 @@ int Sys_C_rate_sr(float *c_rate)
 	/****************************/
 	return 0;
 }/*end of Sys_C_rate_sr*/
-
