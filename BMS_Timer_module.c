@@ -15,7 +15,7 @@ void Fc_start_timer(void)
 	timestamp_start = clock();
 }/*end of Fc_start_timer*/
 
-boolean Fc_counter_elapsed(void)
+int Fc_counter_elapsed(void)
 {
 	clock_t timestamp_current = clock();
 	if( Fc_time_difference(timestamp_current) >= 500 )
