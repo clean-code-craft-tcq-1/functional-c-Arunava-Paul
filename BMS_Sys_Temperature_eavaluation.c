@@ -7,6 +7,8 @@
 
 #include "BMS_System_Check.h"
 #include "BMS_Sensor_Core.h"
+#include "BMS_System_Threshold_Values_Cfg.h"
+
 
 extern Sysfault_type_en Sysfault_global;
 extern Fault_type_en Fault_type_global;
@@ -34,7 +36,7 @@ void Fc_Temperature_Sensor_check(void)
 		else if(temp > MAX_OPERATIONAL_TEMPERATURE)
 		{
 			Fault_type_global = Fault_high_temp;
-			Sysfault_global = Sysfault_Shutdown;
+			Sysfault_global = SysFault_Standby;
 		}
 		else
 		{
