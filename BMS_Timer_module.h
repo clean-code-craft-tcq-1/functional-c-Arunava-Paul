@@ -8,8 +8,10 @@
 #ifndef BMS_TIMER_MODULE_H_
 #define BMS_TIMER_MODULE_H_
 
-long Fc_time_difference(clock_t timestamp_current);
-boolean Fc_counter_elapsed(void);
+#include "time.h"
+
+int Fc_time_difference(clock_t timestamp_current);
+int Fc_counter_elapsed(void);
 void Fc_start_timer(void);
 
 #define TRUE 1
