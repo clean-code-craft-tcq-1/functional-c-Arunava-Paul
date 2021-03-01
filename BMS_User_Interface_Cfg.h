@@ -15,7 +15,7 @@
 		Fault_high_temp,																				\
 		"Warning!! System temperature high, Putting system into standby",								\
 	},																									\
-	{																									\	
+	{							\
 		Fault_soc_low,																					\
 		"Warning!! System SOC low ,  Putting system into sleep , Please connect the vehicle to charge",	\
 	},																									\
