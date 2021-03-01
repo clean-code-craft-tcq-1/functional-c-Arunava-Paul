@@ -5,7 +5,7 @@
 {																										\
 	{																									\
 		Fault_none,																						\
-		"Warning!! System temperature high, Putting system into standby",								\
+		"System ok",								\
 	},																									\
 	{																									\
 		Fault_low_temp,																					\
