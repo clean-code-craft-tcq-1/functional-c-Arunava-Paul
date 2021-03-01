@@ -10,5 +10,10 @@
 
 extern void Fc_Display_Msg(void);
 
+struct user_interface_st
+{
+	int sys_failure_identifier;
+	char *user_msg_string;
+};
 
 #endif /* USER_INTERFACE_H_ */
