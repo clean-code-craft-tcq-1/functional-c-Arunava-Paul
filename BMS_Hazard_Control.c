@@ -11,32 +11,18 @@
 extern Sysfault_type_en Sysfault_global;
 extern int Data_transmission_global;
 
-Hazard_Control_st Hazard_Control[Sysfault_max_condition] = {												\
-	{											\
-		Sysfault_none,						\
-		0,						\
-	},											\
-	{											\
-		SysFault_Standby,						\
-		Fc_System_Standby,						\
-	},											\
-	{											\
-		Sysfault_Shutdown,						\
-		Fc_System_shutdown,					\
-	},											\
-	{											\
-		Sysfault_Sleep,							\
-		Fc_System_Sleep,						\
-	},											\
-	{											\
-		Sysfault_disconnect_charger,			\
-		Fc_Disconnect_Charger					\
-	}											\
-};
+struct Hazard_Control_st Hazard_Control[Sysfault_max_condition] = HAZARD_CONTROL_ACCUMULATED_DATA;
 
 void Fc_Hazard_Control(void)
 {
-	(Hazard_Control[Sysfault_global].hazard_ctrl_pfcpt)();
+	if(Hazard_Control[Sysfault_global].hazard_ctrl_pfcpt != 0)
+	{
+		(Hazard_Control[Sysfault_global].hazard_ctrl_pfcpt)();
+	}
+	else
+	{
+		//dont do anything
+	}
 }/*end of Fc_Hazard_Control*/
 
 void Fc_System_shutdown(void)
