@@ -1,6 +1,6 @@
 #ifndef BMS_USER_INTERFACE_CFG_H_
 #define BMS_USER_INTERFACE_CFG_H_
-
+/***This sequence should be same as enum present in the BMS_System_Check.h**/
 #define USER_INTERFACE_ACCUMULATED_DATA																	\
 {																										\
 	{																									\
