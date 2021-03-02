@@ -33,7 +33,7 @@ void Fc_Cyclic_task(void)
 			if(Bg_aptr[idx_b]!=NULL_PTR)
 			{
 				//call the function
-				(*Bg_aptr[idx_b])();
+				(*Bg_aptr[idx_b])(); 
 			}
 			idx_b++;
 			if(idx_b == MAX_BG_TASK)
