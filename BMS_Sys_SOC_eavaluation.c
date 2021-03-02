@@ -37,9 +37,9 @@ void Fc_SOC_Sensor_check(void)
 			Fault_type_global = Fault_soc_high;
 			Sysfault_global = Sysfault_disconnect_charger;
 		}
-		//else
-		//{
-		//	//system normal,do nothing
-		//}
+		else
+		{
+			//system normal,do nothing
+		}
 	}
 }/*end of Fc_SOC_Sensor_check*/
