@@ -21,7 +21,28 @@ struct Hazard_Control_st
 	Sysfault_type_en Sys_fault_index;
 	hazard_ctrl_fcpt hazard_ctrl_pfcpt;
 };
-
-
+/***This sequence should be same as enum present in the BMS_System_Check.h**/
+#define HAZARD_CONTROL_ACCUMULATED_DATA {												\
+	{											\
+		Sysfault_none,						\
+		0,						\
+	},											\
+	{											\
+		SysFault_Standby,						\
+		Fc_System_Standby,						\
+	},											\
+	{											\
+		Sysfault_Shutdown,						\
+		Fc_System_shutdown,					\
+	},											\
+	{											\
+		Sysfault_Sleep,							\
+		Fc_System_Sleep,						\
+	},											\
+	{											\
+		Sysfault_disconnect_charger,			\
+		Fc_Disconnect_Charger					\
+	}											\
+}
 
 #endif /* BMS_HARZARD_PROTECTION_H_ */
